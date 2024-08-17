@@ -37,7 +37,7 @@ print(a == b)   # Returns false
 print(a != b)   # Returns true
 
 print(b == c and a < b)   # Returns false
-print(b == c or a < b)    # Returns false
+print(b == c or a < b)    # Returns true
 print(not (b > a))        # Returns true
 ```
 
