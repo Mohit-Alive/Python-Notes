@@ -96,3 +96,21 @@ print(str(int_value) + txt_value)  # 50100
 # User input
 num = int(input("Enter the number: "))
 ```
+
+## Lists
+```python
+my_list: list = [true, 1, "Hello", [1, 2, 3]]
+here: list[str] = ['txt', 'here', 'there'] 
+
+# List Methods
+name: list = ['James', 'Bob', 'Jerry']
+
+name.append('Tom')      # Add              # ['James', 'Bob', 'Jerry', 'Tom']
+name.pop()              # Remove last      # ['James', 'Bob', 'Jerry']
+name.remove('Bob')      # Remove specific  # ['James', 'Jerry']
+name[0] = 'Hey'         # Change           # ['Hey', 'Jerry']
+name.insert(1, 'Tim')   # Insert           # ['Hey', 'Tim', 'Jerry']
+name.clear()            # Clear            # []
+```
+
+## Tuple
