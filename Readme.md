@@ -6,7 +6,7 @@ a = 12
 b = 2.3
 c = complex(2,3)
 d = "Hello"
-isconnected = true
+isconnected = True
 
 print(type(c))
 
@@ -99,7 +99,7 @@ num = int(input("Enter the number: "))
 
 ## Lists
 ```python
-my_list: list = [true, 1, "Hello", [1, 2, 3]]
+my_list: list = [True, 1, "Hello", [1, 2, 3]]  # Mutable
 here: list[str] = ['txt', 'here', 'there'] 
 
 # List Methods
@@ -114,3 +114,38 @@ name.clear()            # Clear            # []
 ```
 
 ## Tuple
+Tuple doesn't need any parentheses they are indentify by commas.
+
+```python
+coordinates: tuple = 1.5, 2.4     # Immutable
+coord: tuple = (1.3, 7.8)         # Both are valid syntax
+```
+
+## Sets And Fronzenset
+Not in any particular order <br>
+Are Mutable <br>
+Cant access via index
+
+```python
+element: set = {True, 1, 'Tim'}
+
+element.add('Tom')             # Will add in any order
+element.remove('Tim')
+element.pop()                  # Random
+element.clear()          
+
+freeze = frozenset({1, 2, 3})  # Immutable
+```
+
+## Dictionary
+
+```python
+weather = {'time': '12:00', 
+            'duration': 
+                {'morning': 'rainy', 
+                'afternoon': 'sunny'}}
+
+print(weather['time'])
+print(weather['duration']['morning'])
+
+```
