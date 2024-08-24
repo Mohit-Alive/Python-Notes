@@ -238,3 +238,35 @@ for i in range(3):
 else:
     print('Success!')
 ```
+
+# Functions
+
+```python
+from dateTime import dateTime
+import time
+
+def show_time():
+    current = dateTime.now()
+    print(f'Time: {current:%H:%M:%S}')
+
+show_time()
+time.sleep(2)
+show_time()
+```
+
+## Pass And ...
+```python
+def dont_know:
+    pass
+
+def dont_know:
+    ...
+
+if num > 0:
+    pass
+else:
+    pass
+
+while True:
+    pass
+```
