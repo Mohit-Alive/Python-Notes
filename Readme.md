@@ -197,3 +197,44 @@ while True:
     else:
         print("Bot: Yes, that is interesting.")
 ```
+
+## Break and Continue
+
+```python
+# Continue
+number = 5
+
+while number > 0:
+    number -= 1
+
+    if number == 2:
+        print("Skipping 2")
+        continue
+
+    print(number)
+
+print("Done")        # 4 3 Skipping 2 1 0 Done
+
+# Break
+number = 5
+
+while number > 0:
+    number -= 1
+
+    if number == 2:
+        print("Skipping 2")
+        break
+
+    print(number)
+
+print("Done")        # 4 3 Skipping 2 Done
+```
+
+## Loop-Else
+
+```python
+for i in range(3):
+    print(f'Iteration: {i}')
+else:
+    print('Success!')
+```
