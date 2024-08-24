@@ -148,4 +148,52 @@ weather = {'time': '12:00',
 print(weather['time'])
 print(weather['duration']['morning'])
 
+# F-String
+
+name = "Mohit"
+chr = f"Hello, My name is {name}"
+```
+
+## If-Elif-Else
+
+```python
+age: int  = 19
+
+if age <= 0:
+    print("Please enter a valid age.")
+elif age >= 18:
+    print("You are allowed to vote.")
+else:
+    print("You are not allowed to vote.")
+
+# Short Hand If-Else
+number = 10
+
+result = "Above 0" if number > 0 else "Below 0"
+print(result)
+```
+
+## For-Loop
+```python
+name = "What are you doing?"
+
+for i in range(5):    # 5 is Exclusive (Not included) 0 to 4
+    print(name)
+
+lst = ["Hello", "Hi", "Hey", "Bye"]
+
+for i in lst:
+    print(i)
+```
+
+## While-Loop
+
+```python
+while True:
+    user: str = input("You: ")
+
+    if user == "hello":
+        print("Bot: Hey there!")
+    else:
+        print("Bot: Yes, that is interesting.")
 ```
