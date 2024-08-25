@@ -270,3 +270,58 @@ else:
 while True:
     pass
 ```
+
+## Return Type
+
+```python
+def get_len(text: str) -> int:
+    print(f'Getting the length of: "{text}"...')
+    return len(text)
+
+name: str = 'Mario'
+print(get_len(name))
+```
+
+## Recurssion
+
+``` python
+import time
+def connect_to_internet(signal: bool, delay: int) -> None:
+    if delay > 5:
+        signal = True
+    if signal:
+        print("Connected")
+    else:
+        print(f'Connection failed. Tryping again in: {delay}s....')
+        time.sleep(delay)
+        connect_to_internet(signal, delay+2)
+
+connect_to_internet(False, 1)
+```
+
+## *Args and **Kwargs
+
+* Use *args when you're not sure how many positional arguments will be passed to your function.
+* *args converts into the tuple.
+* Use **kwargs when you're not sure how many keyword arguments will be passed to your function.
+* **Kwargs converts into the dictionary.
+
+```python
+def example_function(*args, **kwargs):
+    print("Positional arguments:", args)
+    print("Keyword arguments:", kwargs)
+
+example_function(1, 2, 3, name="Alice", age=30)
+
+# Positional arguments: (1, 2, 3)
+# Keyword arguments: {'name': 'Alice', 'age': 30}
+
+```
+
+##  / and *
+
+* | / Positional-Only Parameters
+<br/> The / symbol in a function signature is used to indicate that all parameters before it must be passed as positional arguments, not as keyword arguments.
+
+* | * Keyword-Only Parameters
+<br/> The * symbol in a function signature is used to indicate that all parameters after it must be passed as keyword arguments, not as positional arguments.
